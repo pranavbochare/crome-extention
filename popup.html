@@ -1,18 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="popup.css" />
-    <title>AI summarizer</title>
   </head>
   <body>
-    <h3>first crome extention</h3>
-    <input type="text" id="input"/>
+    <h2>Auto Form Filler</h2>
 
-    <button id="btn">click me!</button>
+    <div class="form-group">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" placeholder="first name" />
+    </div>
 
-    <p id="result"></p>
+    <div class="form-group">
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" placeholder="last name" />
+    </div>
+
+    <div class="form-group">
+      <label for="mobile">Mobile:</label>
+      <input type="tel" id="mobile" placeholder="mobile number" />
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="email" />
+    </div>
+
+    <button id="saveBtn">Save Information</button>
+    <button id="fillBtn">Fill & Apply on Current Page</button>
+
+    <div id="status"></div>
 
     <script src="popup.js"></script>
   </body>
